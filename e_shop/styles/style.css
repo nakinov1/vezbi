@@ -1,0 +1,49 @@
+.products-table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.tab-link {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.tab-link:hover {
+  color: #357a38;
+  text-decoration: underline;
+}
+
+.add-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #357a38;
+}
+
+.card-total-list {
+  list-style-type: square;
+}
+
+.cart-total {
+  font-weight: 700; 
+}

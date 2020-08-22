@@ -1,0 +1,6 @@
+git clone https://github.com/nakinov1/vezbi.git
+git status
+
+git add .
+git commit -m "poraka"
+git push

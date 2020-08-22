@@ -1,0 +1,132 @@
+//homework 1
+function calculateSupply(age,amount){
+    var days = 365;
+    var maxAge = 100;
+    age = Math.round(age);
+    amount = Math.round(amount);
+    var year = age * days;
+    var maxAgeDays = 100 * days;
+    var countDays = maxAgeDays - year;
+    var amountPerYear = amount * countDays;
+    var answer = "You will need " + amountPerYear + " to last you until the ripe old age of " + maxAge;
+    return answer;
+}
+console.log(calculateSupply(22.5,5));
+console.log(calculateSupply(40,3.8));
+console.log(calculateSupply(63,2));
+
+//homework 2
+function calculateAge(birth){
+     var currentTime = new Date();
+     var year = currentTime.getFullYear();
+     var currentAge = year - birth;
+     if(year<birth){
+         return "Enter a valid year";
+     }
+     var result = "You are " + currentAge + " years old";
+     return result;
+}
+console.log(calculateAge(1988));
+console.log(calculateAge(1934));
+console.log(calculateAge(2789));
+
+
+//homework 3
+function countLetter(string,letter){
+    var count = 0;
+    for(var i=0;i<string.length;i++){
+        if(string[i]===letter){
+            count++;
+        }
+    }
+    return count;
+}
+console.log(countLetter("gjurgica","g"));
+console.log(countLetter("mirmar","r"));
+console.log(countLetter("sicily","c"));
+
+
+
+//homework 4
+ function truncate(str, length=100, ending="...") {
+    if(str.length>length){
+        return str.substring(0, length - ending.length) + ending;
+    }else{
+        return str;
+    }
+  }
+  console.log(truncate("We are doing JS string exercises."));
+  console.log(truncate("We are doing JS string exercises.",19));
+  console.log(truncate("We are doing JS string exercises.",15,"!!"));
+
+
+
+  //homework 5
+  function remove(arr){
+     return arr.filter(Boolean);
+    }
+    console.log(remove([NaN, 0, 15, false, -22, '',undefined, 47, null,100]));
+
+
+
+
+    //homework 6
+    function farm(num1,num2) {
+        if (num1<=99){
+             num1 = ("000"+num1).slice(-3); 
+            }else if(num2<=99){
+                num2 = ("000"+num2).slice(-3);
+            }
+            var res1 = num1 + " Cows";
+            var res2 = num2 + " Chikens";
+            return res1 + "\n" + res2;
+               }
+  console.log(farm(2,40));
+
+
+//bonus 1
+function find(arr){
+    var sortArray = arr;
+    sortArray.sort(function(a,b){
+        return a-b;
+    });
+    sortArray.pop();
+    sortArray.shift();
+    var secondLower = sortArray[0];
+    var secondMax = sortArray[sortArray.length-1];
+    var result = [];
+    result.push(secondMax,secondLower);
+    return result;
+}
+console.log(find([3,1,5,7,8,4,9]));
+console.log(find([67,33,1,4,16,19,60]));
+
+
+
+
+
+//bonus 3
+function palindrome(num){
+    var toLower = num.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+    var reverse = toLower.split('').reverse().join(''); 
+    return reverse===toLower;
+}
+console.log(palindrome("madam"));
+console.log(palindrome("nurses run"));
+console.log(palindrome("123321"));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

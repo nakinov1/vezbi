@@ -1,0 +1,174 @@
+//Task 1
+//-Declare and initialize an array of strings that contains n elements.
+//-In the console print out the length of the first element.
+//-In the console print out the length of the last element.
+
+//________________________________________________________________________________________________
+
+stringsArray = ["daaaa", "aaaaaaaaaaaa", "aeaaaaaaaaaaaaaa", "aererewrewrwer", "zrrrrrc", "qqq12345678987654321", "www98765432123456789"];
+console.log(`Our array is: ${stringsArray}.`);
+console.log(`The length of the first element in this array is ${stringsArray[0].length} !`);
+lastIndex = stringsArray.length - 1;
+console.log(`The length of the last element in the array is ${stringsArray[lastIndex].length} !`);
+
+//___________________________________________________________________________________________________
+
+//Task 2
+//-In the console print out "The first element has bigger length" or "The last element has biggier length" or "The first and last element have the same length."
+
+//__________________________________________________________________________________________________________
+
+if(stringsArray[0].length > stringsArray[lastIndex].length){
+	console.log(`The first element have bigger length !`);
+} else if(stringsArray[0].length < stringsArray[lastIndex].length){
+	console.log(`The last element have bigger length !`);
+} else {
+	console.log(`The first and last element have the same length !`);}
+
+//______________________________________________________________________________________________________________
+
+//Task 3
+//-Find the element that has the biggest length.
+//_____________________________________________________________________________________________________________
+var length = 0;
+var result;
+var indexResult;
+for(i=0; i<stringsArray.length; i++){
+	if(stringsArray[i].length > length){
+		length = stringsArray[i].length;
+		result = stringsArray[i];
+		indexResult = i; 
+}
+}
+tempArray = [];
+for(i=0; i<stringsArray.length; i++){
+tempArray.push(stringsArray[i]);
+}
+tempArray.splice(indexResult, 1);
+resultArray = [result];
+for(i=0; i < tempArray.length; i++){
+	if(result.length === tempArray[i].length){
+		resultArray.push(tempArray[i]);
+}
+}
+if(resultArray.length > 1){
+	console.log(`These elements ${resultArray} of our array have the biggest lengths !`);
+} else {
+	console.log(`The element "${result}" have the biggest length in this array !`);}
+
+//_____________________________________________________________________________________________________________
+//Task 4
+//-Concatenate all the elements into a result string.
+//____________________________________________________________________________________________________________
+
+concatResult = "";
+for(i=0; i<stringsArray.length; i++){
+	concatResult += stringsArray[i];
+}
+console.log(`When we concat all the elements from our array, the result will be: ${concatResult}`);
+
+//_____________________________________________________________________________________________________________
+//Task 5
+//-Reverse the element that has the biggest length. Example : "javascript" -> "tpircsavaj"
+//_____________________________________________________________________________________________________________
+var multiResult = "";
+// var tempResult = "";
+var reverseResult = "";
+// var reverseTempResult = "";
+if(resultArray.length === 1){
+	for(i=(result.length-1); i>=0; i--){
+		reverseResult += result[i];
+}
+console.log(`The element with the biggest length reversed:`);
+} else { console.log(`There are more then one element with the same biggest length, reversed are:`);
+	for(el=0; el < resultArray.length; el++){
+		tempResult = "";
+		reverseTempResult = "";
+		tempResult += resultArray[el];
+		for(i=tempResult.length-1; i>=0; i--){
+		reverseTempResult += tempResult[i];
+}
+		console.log(`${reverseTempResult}`);
+		
+}
+}
+
+//__________________________________________________________________________________________________________________
+//Task 6
+//-What is the lenght of the reversed element ?
+//____________________________________________________________________________________________________________
+
+var answer = `The length of the reversed element(elements) is ${result.length} !`
+console.log(answer);
+
+//______________________________________________________________________________________________________________
+//Task 7
+//-Find all the palindroms in the array. A palindrom is a word that is equal to the reversed word. Ex : "Ana" , "Bob" "boob"
+//__________________________________________________________________________________________________________________________
+
+testArray = ["ana", "boob", "bob", "123454321", "qwertytrewq", "rrrrrrrrrrc", "rrrrrrrrrrt", "xex"];
+for(el = 0; el < testArray.length; el++){
+	reverseElementOfArray = "";
+	elementOfArray = "";
+	elementOfArray += testArray[el];
+	for(i = elementOfArray.length - 1; i >= 0; i--){
+		reverseElementOfArray += elementOfArray[i];
+}
+if(reverseElementOfArray === testArray[el]){
+			console.log(`"${reverseElementOfArray}" is palindrome !`);
+}
+}
+
+//_______________________________________________________________________________________________________________
+//Task 8
+//-Print out the number of palindromes in the array
+//______________________________________________________________________________________________________________
+
+
+counter = 0;
+testArray = ["ana", "boob", "bob", "123454321", "qwertytrewq", "rrrrrrrrrrc", "rrrrrrrrrrt", "xex"];
+for(el = 0; el < testArray.length; el++){
+	reverseElementOfArray = "";
+	elementOfArray = "";
+	elementOfArray += testArray[el];
+	for(i = elementOfArray.length - 1; i >= 0; i--){
+		reverseElementOfArray += elementOfArray[i];
+}
+if(reverseElementOfArray === testArray[el]){
+			counter += 1;
+}
+}
+console.log(`The number of palindromes in this array is: ${counter} !`);
+
+//______________________________________________________________________________________________________________
+//Task 9
+//-Create a new array that the elements are the lengths of the elements in the previous array.
+//_______________________________________________________________________________________________________________
+
+arrayLengths = [];
+for(i=0; i < testArray.length; i++){
+	elementLength = 0;
+	elementLength += testArray[i].length;
+	arrayLengths.push(elementLength);
+}
+
+console.log(arrayLengths);
+
+//_______________________________________________________________________________________________________________
+//Task 10
+//-Remove the minimum and the maximum from the array
+//______________________________________________________________________________________________________________
+
+
+
+
+// -------------- Tolku e, vcera bev skopje vezbavme so kolegite, denes od sabajle do sega vie zadaci, 
+//    sega ke se spremam da trgam Seavus, a ostatokot utre od sabajle ke gi zavrsam, pozdrav !
+
+
+//_____________________________________________________________________________________________________________
+// uste Task 10 od revision.txt i script.js
+
+
+
+

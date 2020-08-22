@@ -1,0 +1,31 @@
+Task 1
+-Declare and initialize an array of strings that contains n elements.
+-In the console print out the lenght of the first element.
+-In the console print out the lenght of the last element.
+
+Task 2
+-In the console print out "The first element has bigger length" or "The last element has biggier length" or "The first and last element have the same length."
+
+Task 3
+-Find the element that has the biggest length.
+
+Task 4
+-Concatenate all the elements into a result string.
+
+Task 5
+-Reverse the element that has the biggest length. Example : "javascript" -> "tpircsavaj"
+
+Task 6
+-What is the lenght of the reversed element ?
+
+Task 7
+-Find all the palindroms in the array. A palindrom is a word that is equal to the reversed word. Ex : "Ana" , "Bob" "boob"
+
+Task 8
+-Print out the number of palindromes in the array
+
+Task 9
+-Create a new array that the elements are the lenghts of the elements in the previous array.
+
+Task 10
+-Remove the minimum and the maximum from the array

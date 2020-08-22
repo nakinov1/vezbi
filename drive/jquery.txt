@@ -1,0 +1,3 @@
+jqueryui.com
+api.jquery.com
+code.jquery.com

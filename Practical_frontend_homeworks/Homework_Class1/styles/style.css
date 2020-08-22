@@ -1,0 +1,84 @@
+.header {
+    background-image: url("../img/hero.jpg");
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    margin: 0 0px;
+}
+
+.header-list {
+    display: inline-block;
+    list-style-type: none;
+    position: absolute;
+    right: 180px;
+    top: 40px;
+}
+
+.header-list-item {
+    display: inline;
+    margin: 0 5px;
+    color: white;
+    font-family: Lato;
+}
+
+.img-logo {
+    position: absolute;
+    top: 55px;
+    left: 190px;
+}
+
+a:link {color: white; text-decoration: none; }
+a:visited {color: #0000CC; text-decoration: none; }
+a:hover {color: red; text-decoration: underline; }
+a:active {color: blue; }
+
+.paragraph-mache-PSD {
+    color: white;
+    font-family: Lato;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 240%;
+}
+
+.section-red-line {
+    position: absolute;
+    top: 285px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:#FF235B;
+    height: 1px;
+    width: 200px;
+}
+
+.article-PSD {
+    position: absolute;
+    top: 303px;
+    left: 23%;
+}
+
+.paragraph-PSD {
+    text-align: center;
+    color: white;
+    font-size: 110%;
+    font-family: Lato;
+    font-style: italic;
+    /* font-weight: 25%; */
+    /* voa te molam kazi mi kako potanki da gi napravam bukvite so font-weight ne mi uspeva */
+}
+
+.button-show-more {
+    background-color: #FF235B;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 433px;
+    border-radius: 35px;
+    color: white;
+    padding: 14px 50px;
+    border: 0;
+}

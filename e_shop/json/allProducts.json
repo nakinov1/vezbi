@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Banana",
+    "price" :100
+  },
+  {
+    "id": 2,
+    "name": "Tomato",
+    "price" :50
+  },
+  {
+    "id": 3,
+    "name": "Potatoes",
+    "price" :70
+  },
+  {
+    "id": 4,
+    "name": "Shoes",
+    "price" :1400
+  }
+]

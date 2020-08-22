@@ -1,0 +1,100 @@
+.header {
+    width: 100%;
+    height: 83px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    height: 83px;
+}
+
+.login-name {
+    margin-bottom: 18px;
+    margin-right: 15px;
+}
+
+.login-password {
+    margin-right: 15px;
+}
+
+.logo {
+    margin-right: 440px;
+    margin-top: 4px;
+    display: flex;
+}
+
+.login-forgot {
+    display: inline-block;
+    margin-top: 45px;
+    margin-right: 200px;
+}
+
+a:link {color: white; text-decoration: none; }
+a:visited {color: #0000CC; text-decoration: none; }
+a:hover {color: red; text-decoration: underline; }
+a:active {color: blue; }
+
+.main {
+    display: flex;
+    justify-content: center;
+    width: 67%;
+    margin: auto;
+}
+
+.main-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.main-left p {
+    display: flex;
+    align-items: center;
+}
+
+.main-left p img {
+    width: 70px;
+    height: 70px;
+    margin-right: 7px;
+}
+
+.main-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;;
+}
+
+.main-right > p {
+    font-size: 20px;
+    margin: 0 0 15px 0;
+}
+
+.main-right input {
+    margin: 5px 5px 5px 0px;    
+}
+
+.main-right input[type="text"],
+.main-right input[type="password"] {
+    background-color: white;
+    padding: 5px 10px;
+    color:black;
+    border-radius: 5px;;
+}
+
+.main-right > h1 {
+    margin: 15px 0 5px 0;
+}
+
